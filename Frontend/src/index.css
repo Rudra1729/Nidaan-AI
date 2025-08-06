@@ -1,0 +1,123 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional healthcare design system */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Clean white */
+    --foreground: 215 25% 27%; /* Professional dark blue-gray */
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 27%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 173 58% 39%; /* Professional teal */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 95%; /* Light blue-gray */
+    --secondary-foreground: 215 25% 27%;
+
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 14% 51%;
+
+    --accent: 43 96% 56%; /* Warm amber */
+    --accent-foreground: 215 25% 27%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 14% 89%;
+    --input: 215 14% 89%;
+    --ring: 173 58% 39%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 215 25% 27%;
+    --sidebar-primary: 173 58% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 20% 95%;
+    --sidebar-accent-foreground: 215 25% 27%;
+    --sidebar-border: 215 14% 89%;
+    --sidebar-ring: 173 58% 39%;
+  }
+
+  .dark {
+    --background: 215 25% 9%;
+    --foreground: 215 20% 95%;
+
+    --card: 215 25% 11%;
+    --card-foreground: 215 20% 95%;
+
+    --popover: 215 25% 11%;
+    --popover-foreground: 215 20% 95%;
+
+    --primary: 173 58% 49%;
+    --primary-foreground: 215 25% 9%;
+
+    --secondary: 215 25% 16%;
+    --secondary-foreground: 215 20% 95%;
+
+    --muted: 215 25% 16%;
+    --muted-foreground: 215 14% 51%;
+
+    --accent: 43 96% 66%;
+    --accent-foreground: 215 25% 9%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 215 20% 95%;
+
+    --border: 215 25% 18%;
+    --input: 215 25% 18%;
+    --ring: 173 58% 49%;
+
+    --sidebar-background: 215 25% 9%;
+    --sidebar-foreground: 215 20% 95%;
+    --sidebar-primary: 173 58% 49%;
+    --sidebar-primary-foreground: 215 25% 9%;
+    --sidebar-accent: 215 25% 16%;
+    --sidebar-accent-foreground: 215 20% 95%;
+    --sidebar-border: 215 25% 18%;
+    --sidebar-ring: 173 58% 49%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Professional healthcare gradients */
+.gradient-healthcare {
+  background: linear-gradient(135deg, hsl(173, 58%, 39%) 0%, hsl(188, 78%, 41%) 100%);
+}
+
+.gradient-subtle {
+  background: linear-gradient(135deg, hsl(210, 40%, 98%) 0%, hsl(215, 20%, 95%) 100%);
+}
+
+/* Voice interaction animations */
+.pulse-ring {
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+    opacity: 1;
+  }
+  80%, 100% {
+    transform: scale(2.33);
+    opacity: 0;
+  }
+}
