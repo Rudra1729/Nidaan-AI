@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydub
+google-cloud-speech
+google-cloud-texttospeech
+google-auth
+google-cloud-translate
+requests
+langchain-community
+langchain
+sentence-transformers
+chromadb
+ollama
