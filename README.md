@@ -1,6 +1,6 @@
 # Nidaan-AI
 
-## 🧪 Try Out Nidaan AI  
+## 🩺 Try Out Nidaan AI  
 Experience how Nidaan AI guides users through early symptom detection, local remedies, and government healthcare schemes — all in their own language.
 
 👉 [Launch the Demo](https://heartfelt-platypus-f0db33.netlify.app)
